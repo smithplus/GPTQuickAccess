@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "ChatGPT Edge UA",
+    "version": "1.0",
+    "description": "Abre ChatGPT en una nueva pestaña con un User-Agent de Edge",
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "webRequest",
+      "*://*.openai.com/*"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
